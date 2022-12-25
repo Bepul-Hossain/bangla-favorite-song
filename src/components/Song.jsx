@@ -1,11 +1,10 @@
 import { useRef, useState } from "react";
 
-const Song = ({ item }) => {
-
-  const { name, lyrics } = item;
+const Song = ({ song, index }) => {
+  const { name, lyrics } = song;
   const [isClick, setIsClick] = useState(false);
   const contentEl = useRef();
-  
+
   const handleToggle = () => {
     setIsClick(!isClick);
   };
@@ -13,7 +12,7 @@ const Song = ({ item }) => {
   return (
     <li className={`para ${isClick ? "active" : ""}`}>
       <button className="button" onClick={handleToggle}>
-        {name}
+        {index}. &nbsp; {name}
         <span className="control">{isClick ? "—" : "+"} </span>
       </button>
       <div

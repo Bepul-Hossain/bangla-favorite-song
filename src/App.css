@@ -15,9 +15,8 @@ li{
 .lyrics_wrapper {
   height: 0;
   overflow: hidden;
-  transition: height ease 1s;
+  transition: height ease 0.75s;
 }
-
 
 .button {
   font-size: 16px;

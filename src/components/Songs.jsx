@@ -1,12 +1,12 @@
 import Song from "./Song";
 const Songs = ({ songs }) => {
-
     return (
         <div>
-            {songs.map((item, index) =>
+            {songs.map((song, index) =>
                 <Song
-                    key={index}
-                    item={item}
+                    key={song.name}
+                    index={++index}
+                    song={song}
                 />
             )}
         </div>
