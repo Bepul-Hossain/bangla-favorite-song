@@ -1,11 +1,15 @@
+import AccordionItem from "./AccordionItem";
 const Song = ({ songList }) => {
-    let lists = [];
-    songList.map((item) => lists.push(
-        <li key={item.title} className="para"><h2>{item.title}</h2>{item.song}</li>
-    ))
+
     return (
         <div>
-            {lists}
+            {songList.map((item, index) =>
+                <AccordionItem
+                    key={index}
+                    item={item}
+                />
+                // <li key={item.title} className="para"><h2>{item.title}</h2>{item.song}</li>
+            )}
         </div>
     )
 }
