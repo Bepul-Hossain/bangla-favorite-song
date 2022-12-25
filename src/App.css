@@ -15,7 +15,7 @@ li{
 .lyrics_wrapper {
   height: 0;
   overflow: hidden;
-  transition: height ease 0.2s;
+  transition: height ease 1s;
 }
 
 
@@ -30,9 +30,9 @@ li{
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 8px;
+  padding: 10px 8px;
   cursor: pointer;
-  border: none;
+  border: 2px solid pink;
 }
 
 .control {

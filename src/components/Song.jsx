@@ -3,24 +3,24 @@ import { useRef, useState } from "react";
 const Song = ({ item }) => {
 
   const { name, lyrics } = item;
-  const [clicked, setClicked] = useState(false);
+  const [isClick, setIsClick] = useState(false);
   const contentEl = useRef();
   
   const handleToggle = () => {
-    setClicked((prev) => !prev);
+    setIsClick(!isClick);
   };
 
   return (
-    <li className={`para ${clicked ? "active" : ""}`}>
+    <li className={`para ${isClick ? "active" : ""}`}>
       <button className="button" onClick={handleToggle}>
         {name}
-        <span className="control">{clicked ? "—" : "+"} </span>
+        <span className="control">{isClick ? "—" : "+"} </span>
       </button>
       <div
         ref={contentEl}
         className="lyrics_wrapper"
         style={
-            clicked
+          isClick
             ? { height: contentEl.current.scrollHeight }
             : { height: "0px" }
         }
