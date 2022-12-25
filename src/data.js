@@ -1,4 +1,4 @@
-const SongList = [
+const SONGS = [
     {
         name: `Amake Amar Moto Thakte Dao`,
         lyrics: `
@@ -94,4 +94,4 @@ const SongList = [
     }
 ];
 
-export default SongList;
+export default SONGS;

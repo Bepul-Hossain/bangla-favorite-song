@@ -1,14 +1,13 @@
 import AccordionItem from "./AccordionItem";
-const Song = ({ songList }) => {
+const Song = ({ songs }) => {
 
     return (
         <div>
-            {songList.map((item, index) =>
+            {songs.map((item, index) =>
                 <AccordionItem
                     key={index}
                     item={item}
                 />
-                // <li key={item.title} className="para"><h2>{item.title}</h2>{item.song}</li>
             )}
         </div>
     )
