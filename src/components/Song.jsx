@@ -23,10 +23,10 @@ const Song = ({ song, index }) => {
             ? { height: contentEl.current.scrollHeight }
             : { height: "0px" }
         }
-      > 
-        
+      >
+
         <div className="lyrics">
-          {videoLink && <a href={videoLink}>Video link<br/></a>}
+          {videoLink && <a href={videoLink} target="_blank" rel="noreferrer">Video link<br /></a>}
           {lyrics}
         </div>
       </div>
