@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 const Song = ({ song, index }) => {
-  const { name, lyrics } = song;
+  const { name, lyrics, videoLink } = song;
   const [isClick, setIsClick] = useState(false);
   const contentEl = useRef();
 
@@ -23,8 +23,12 @@ const Song = ({ song, index }) => {
             ? { height: contentEl.current.scrollHeight }
             : { height: "0px" }
         }
-      >
-        <div className="lyrics">{lyrics}</div>
+      > 
+        
+        <div className="lyrics">
+          {videoLink && <a href={videoLink}>Video link<br/></a>}
+          {lyrics}
+        </div>
       </div>
     </li>
   );

@@ -1,6 +1,7 @@
 const SONGS = [
     {
-        name: `Amake Amar Moto Thakte Dao`,
+        name: `Amake Amar Moto Thakte Dao Lyrics In Bengali:`,
+        videoLink: `https://www.youtube.com/watch?v=Gy0kTWVZsDg`,
         lyrics: `
         আমাকে আমার মতো থাকতে দাও
         আমি নিজেকে নিজের মতো গুছিয়ে নিয়েছি (x2)
@@ -64,10 +65,12 @@ const SONGS = [
         না... না-না-না-না-না-না, না-না-না-না…
         না, না-না-না-না…
         না... না-না-না-না-না-না, না-না-না-না…
-        না, না-না-না-না…`
+        না, না-না-না-না…
+        `
     },
     {
-        name: `Ami jani go bondhuar piriter koto jala`,
+        name: `Ami jani go bondhuar piriter koto jala:`,
+        videoLink:`https://www.youtube.com/watch?v=Xb0JXLyZa9Q&list=RDMM&start_radio=1&rv=vYsfSlEBh5Y`,
         lyrics: `
         তোমরা আমায় কী... বু...ঝাইবা,  আমার অন্তর পুইড়া কয়লা !!
         আমি জানি গো…, আমি বুঝি গো…
@@ -90,7 +93,8 @@ const SONGS = [
         তোমরা আমার কী... বু...ঝাইবা, আমার অন্তর পুইড়া কয়লা !!
          
         আমি জানি গো,  বন্ধুয়ার পিরিতে কত জ্বালা
-        আমি বুঝি গো,  বন্ধুয়ার পিরিতে কত জ্বালা (3x)`
+        আমি বুঝি গো,  বন্ধুয়ার পিরিতে কত জ্বালা (3x)
+        `
     }
 ];
 
