@@ -12,7 +12,7 @@ li{
 .para{
   white-space: pre-wrap;
 }
-.answer_wrapper {
+.lyrics_wrapper {
   height: 0;
   overflow: hidden;
   transition: height ease 0.2s;
@@ -39,13 +39,7 @@ li{
   font-size: 20px;
 }
 
-.answer {
+.lyrics {
   background-color: #f7f7f7;
   padding: 20px;
-}
-
-.answer_wrapper {
-  height: 0;
-  overflow: hidden;
-  transition: height ease 0.2s;
 }
