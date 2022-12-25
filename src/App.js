@@ -1,12 +1,12 @@
 import SONGS from './data';
 import './App.css';
 
-import Song from './components/Song';
+import Songs from './components/Songs';
 
 function App() {
   return (
     <div className='app'>
-      <Song songs={SONGS} />
+      <Songs songs={SONGS} />
     </div>
   );
 }
