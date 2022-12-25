@@ -25,10 +25,10 @@ li{
   text-align: left;
   font-weight: 700;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: 100%;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   padding: 10px 8px;
   cursor: pointer;
   border: 2px solid pink;
