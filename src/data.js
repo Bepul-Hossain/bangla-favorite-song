@@ -1,7 +1,7 @@
 const SongList = [
     {
-        title: `Amake Amar Moto Thakte Dao`,
-        song: `
+        name: `Amake Amar Moto Thakte Dao`,
+        lyrics: `
         আমাকে আমার মতো থাকতে দাও
         আমি নিজেকে নিজের মতো গুছিয়ে নিয়েছি (x2)
         যেটা ছিলো না ছিলো না, সেটা না পাওয়াই থাক
@@ -67,8 +67,8 @@ const SongList = [
         না, না-না-না-না…`
     },
     {
-        title: `Ami jani go bondhuar piriter koto jala`,
-        song: `
+        name: `Ami jani go bondhuar piriter koto jala`,
+        lyrics: `
         তোমরা আমায় কী... বু...ঝাইবা,  আমার অন্তর পুইড়া কয়লা !!
         আমি জানি গো…, আমি বুঝি গো…
         বন্ধুয়ার পিরিতে কত জ্বালা । 

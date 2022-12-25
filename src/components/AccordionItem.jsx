@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 const AccordionItem = ({ item }) => {
-  const { title, song } = item;
+  const { name, lyrics } = item;
   const [clicked, setClicked] = useState(false);
   const contentEl = useRef();
   const handleToggle = () => {
@@ -10,7 +10,7 @@ const AccordionItem = ({ item }) => {
   return (
     <li className={`para ${clicked ? "active" : ""}`}>
       <button className="button" onClick={handleToggle}>
-        {title}
+        {name}
         <span className="control">{clicked ? "—" : "+"} </span>
       </button>
       <div
@@ -22,7 +22,7 @@ const AccordionItem = ({ item }) => {
             : { height: "0px" }
         }
       >
-        <div className="answer">{song}</div>
+        <div className="answer">{lyrics}</div>
       </div>
     </li>
   );
