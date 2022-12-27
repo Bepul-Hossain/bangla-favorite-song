@@ -43,9 +43,15 @@ li{
 }
 /* search.jsx */
 input{
+  position: fixed;
+  top: 0;
   margin: 3px 0px;
   border: 2px solid green;
   height: 30px;
   border-radius: 6px;
   padding-left: 12px;
+}
+
+.songs{
+  margin-top: 40px;
 }
