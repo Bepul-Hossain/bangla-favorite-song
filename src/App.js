@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import SONGS from './data';
 import './App.css';
 
 import Songs from './components/Songs';
+import Search from './components/Search';
 
 function App() {
 
@@ -12,9 +14,15 @@ function App() {
     return x < y ? -1 : x > y ? 1 : 0;
   });
 
+  const [userSearchText, setUserSearchText] = useState("");
+  const handleChange = (e) => {
+    setUserSearchText(e.target.value);
+  }
+
   return (
     <div className='app'>
-      <Songs songs={songsSortByName} />
+      <Search textChange={handleChange} userSearchText={userSearchText} />
+      <Songs songs={songsSortByName} userSearchText={userSearchText}/>
     </div>
   );
 }
