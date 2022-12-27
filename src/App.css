@@ -43,6 +43,7 @@ li{
 }
 /* search.jsx */
 input{
+  margin: 3px 0px;
   border: 2px solid green;
   height: 30px;
   border-radius: 6px;

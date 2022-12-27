@@ -1,6 +1,6 @@
 const Search = ({ textChange, userSearchText }) => {
     return (
-        <input type="text" placeholder="search song name by english letter" value={userSearchText} onChange={textChange} />
+        <input type="text" placeholder="Search by english name" value={userSearchText} onChange={textChange} />
     )
 }
 
